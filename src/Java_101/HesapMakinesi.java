@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class HesapMakinesi {
     public static void main(String[] args) {
 
-        int n1, n2, operation;
+        int n1;
+        int n2;
+        int choose;
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("İlk sayıyı giriniz: ");
@@ -16,9 +19,9 @@ public class HesapMakinesi {
 
         System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme");
         System.out.print("Seçiminiz: ");
-        operation = scanner.nextInt();
+        choose = scanner.nextInt();
 
-        switch (operation) {
+        switch (choose) {
             case 1:
                 System.out.println("Toplam: " + (n1 + n2));
                 break;
